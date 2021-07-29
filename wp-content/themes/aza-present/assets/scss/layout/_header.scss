@@ -1,0 +1,59 @@
+.header {
+
+  &__top {
+    background: $grey;
+    padding: 5px 0;
+  }
+
+  &__top-menu-wrap {
+    display: none;
+  }
+
+  &__logo-wrap {
+    display: none;
+  }
+
+  &__logo-link {
+  }
+
+  &__logo {
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__phone {
+  }
+
+  &__adress {
+  }
+
+  &__cta-wrap {
+  }
+
+  &__cta {
+  }
+
+  &__bottom {
+  }
+
+  &__burger-wrap {
+  }
+
+  &__bottom-menu-wrap {
+  }
+
+  &__bottom-nav {
+  }
+
+  &__cat-menu {
+  }
+
+  &__customer-area {
+  }
+
+  &__customer-link {
+  }
+}
