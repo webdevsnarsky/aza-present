@@ -1,0 +1,57 @@
+.burger {
+  position: relative;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  user-select: none;
+  transition: $fast ease-in;
+
+
+  &:hover .burger__line {
+    width: 100%;
+  }
+
+  &__line,
+  &:after, 
+  &:before {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    background-color: $black;
+    border-radius: 999px;
+    transition: $fast;
+  } 
+  
+  &:after, 
+  &:before {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  
+  &__line {
+    width: 60%;
+    top: calc(50% - 2px);
+    transition: $fast;
+  }
+}
+
+.burger_toggle .burger__line {
+  display: none;
+}
+.burger_toggle::after {
+  transform: rotate(-45deg) translate(7px,-8px);
+}
+
+.burger_toggle::before {
+  transform: rotate(45deg) translate(6px,7px);
+}

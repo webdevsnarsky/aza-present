@@ -1,0 +1,12 @@
+.btn-prime {
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 14px;
+  color: $white;
+  background-color: $prime;
+  border: none;
+  border-radius: 12px;
+  &:hover {
+    background-color: $prime-active;
+  }
+}

@@ -21,18 +21,18 @@ $breakpoints: ( // breakpoints
 }
 
 // global variables to fallback in ie11 and old browsers
-$gl-content-width: 1170px;
-$gl-mob-padding: 15px;
+$gl-content-width: 1110px;
+$gl-mob-padding: 30px;
 $gl-gutter: 15px;
 
 // container, variables and fluid mobile gutters for mordern browsers
 :root {
-  --content-width: 1170px;
+  --content-width: 1110px;
   --mob-padding: 15px;
   --gutter: 15px;
 
-  @include breakpoint(lg) {
-    // --content-width: 1330px;
+  @include breakpoint(md) {
+    --mob-padding: 30px;
   }
 
   @include breakpoint(xxl) {

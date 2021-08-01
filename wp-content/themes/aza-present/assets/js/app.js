@@ -1,9 +1,3 @@
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+import './components/swiper';
+import './components/burger';
 
-console.log('hello world');
-
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
-});

@@ -54,7 +54,7 @@ gulp.task('js', function (){
 gulp.task('browser-sync', function () {
   browserSync({
     // add neccesary url to proxy for live time dev
-    proxy: "podarok.local/",
+    proxy: "aza-present.local/",
     notify: false,
     open: false,
     // tunnel: true,

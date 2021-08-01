@@ -1,0 +1,30 @@
+.search {
+  position: relative;
+  
+  &__input {
+    padding: 7px 30px;
+    width: 100%;
+    border: transparent solid 2px;
+    border-radius: 10px;
+    background-color: $grey-light;
+    background-image: url(../img/svg-icons/search-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 10px 50%;
+    outline: none;
+  }
+
+
+  &__micro {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-90%, -50%);
+  }
+}
+
+input[type="search" i] {
+  &:focus {
+    border: $prime solid 2px;
+  }
+}

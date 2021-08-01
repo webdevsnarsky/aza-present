@@ -11,6 +11,8 @@
 
 namespace Cyr_To_Lat;
 
+use Polylang;
+use SitePress;
 use WP_Error;
 use wpdb;
 use Exception;
@@ -90,7 +92,14 @@ class Main {
 	 *
 	 * @var string
 	 */
-	private $pll_locale = false;
+	private $pll_locale;
+
+	/**
+	 * WPML locale.
+	 *
+	 * @var string
+	 */
+	private $wpml_locale;
 
 	/**
 	 * Main constructor.
@@ -153,8 +162,14 @@ class Main {
 		add_filter( 'pre_insert_term', [ $this, 'pre_insert_term_filter' ], PHP_INT_MAX, 2 );
 		add_filter( 'get_terms_args', [ $this, 'get_terms_args_filter' ], PHP_INT_MAX, 2 );
 
-		if ( class_exists( 'Polylang' ) ) {
+		if ( class_exists( Polylang::class ) ) {
 			add_filter( 'locale', [ $this, 'pll_locale_filter' ] );
+		}
+
+		if ( class_exists( SitePress::class ) ) {
+			// We cannot use locale filter here
+			// as WPML reverts locale at PHP_INT_MAX in \WPML\ST\MO\Hooks\LanguageSwitch::filterLocale.
+			add_filter( 'ctl_locale', [ $this, 'wpml_locale_filter' ], - PHP_INT_MAX );
 		}
 	}
 
@@ -189,13 +204,16 @@ class Main {
 
 		$term = '';
 		if ( $this->is_term ) {
-			$sql  = $wpdb->prepare(
+			$sql = $wpdb->prepare(
 				"SELECT slug FROM $wpdb->terms t LEFT JOIN $wpdb->term_taxonomy tt
 							ON t.term_id = tt.term_id
 							WHERE t.name = %s",
 				$title
 			);
-			$sql .= ' AND tt.taxonomy IN (' . $this->prepare_in( $this->taxonomies ) . ')';
+
+			if ( $this->taxonomies ) {
+				$sql .= ' AND tt.taxonomy IN (' . $this->prepare_in( $this->taxonomies ) . ')';
+			}
 
 			// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 			// phpcs:ignore WordPress.DB.DirectDatabaseQuery
@@ -390,7 +408,7 @@ class Main {
 	 * @param array $data    An array of slashed post data.
 	 * @param array $postarr An array of sanitized, but otherwise unmodified post data.
 	 *
-	 * @return mixed
+	 * @return array
 	 * @noinspection PhpUnusedParameterInspection
 	 */
 	public function sanitize_post_name( $data, $postarr = [] ) {
@@ -426,8 +444,8 @@ class Main {
 	public function pre_insert_term_filter( $term, $taxonomy ) {
 		if (
 			0 === $term ||
-			'' === trim( $term ) ||
-			is_wp_error( $term )
+			is_wp_error( $term ) ||
+			'' === trim( $term )
 		) {
 			return $term;
 		}
@@ -580,6 +598,30 @@ class Main {
 	}
 
 	/**
+	 * Locale filter for WPML.
+	 *
+	 * @param string $locale Locale.
+	 *
+	 * @return string
+	 */
+	public function wpml_locale_filter( $locale ) {
+		if ( $this->wpml_locale ) {
+			return $this->wpml_locale;
+		}
+
+		$language_code = wpml_get_current_language();
+		$languages     = apply_filters( 'wpml_active_languages', null );
+
+		if ( isset( $languages[ $language_code ] ) ) {
+			$this->wpml_locale = $languages[ $language_code ]['default_locale'];
+
+			return $this->wpml_locale;
+		}
+
+		return $locale;
+	}
+
+	/**
 	 * Changes array of items into string of items, separated by comma and sql-escaped
 	 *
 	 * @see https://coderwall.com/p/zepnaw
@@ -593,14 +635,15 @@ class Main {
 	public function prepare_in( $items, $format = '%s' ) {
 		global $wpdb;
 
-		$items    = (array) $items;
-		$how_many = count( $items );
+		$prepared_in = '';
+		$items       = (array) $items;
+		$how_many    = count( $items );
+
 		if ( $how_many > 0 ) {
 			$placeholders    = array_fill( 0, $how_many, $format );
 			$prepared_format = implode( ',', $placeholders );
-			$prepared_in     = $wpdb->prepare( $prepared_format, $items ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
-		} else {
-			$prepared_in = '';
+			// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+			$prepared_in = $wpdb->prepare( $prepared_format, $items );
 		}
 
 		return $prepared_in;

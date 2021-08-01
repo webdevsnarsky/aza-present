@@ -1,2 +1,57 @@
 [25-Jul-2021 20:59:40 UTC] База данных WordPress возвратила ошибку Table 'epiz_29235978_user.wp_options' doesn't exist в ответ на запрос INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'XiOKGzajJL~?9-G&Nizr}8`*i%3Ll  $n*q&uzwaFB<EVOU#@x}NMNUh_9(ZsWh|', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`), выполненный wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
 [25-Jul-2021 20:59:40 UTC] База данных WordPress возвратила ошибку Table 'epiz_29235978_user.wp_options' doesn't exist в ответ на запрос INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', '$%Qcr(fgk&)zhM*0|4w_7Ak@1UVr/{sBjc!NvC8 Et8^lP?z98gG@?7pr$|6xT Z', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`), выполненный wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
+[29-Jul-2021 15:22:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php:43
+Stack trace:
+#0 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(770): require_once()
+#1 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(716): load_template('C:\\OpenServer\\d...', true, Array)
+#2 C:\OpenServer\domains\aza-present.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\front-page.php(1): get_header()
+#4 C:\OpenServer\domains\aza-present.local\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\aza-present.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#6 C:\OpenServer\domains\aza-present.local\index.php(17): require('C:\\OpenServer\\d...')
+#7 {main}
+  thrown in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php on line 43
+[29-Jul-2021 15:39:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php:43
+Stack trace:
+#0 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(770): require_once()
+#1 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(716): load_template('C:\\OpenServer\\d...', true, Array)
+#2 C:\OpenServer\domains\aza-present.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\front-page.php(1): get_header()
+#4 C:\OpenServer\domains\aza-present.local\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\aza-present.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#6 C:\OpenServer\domains\aza-present.local\index.php(17): require('C:\\OpenServer\\d...')
+#7 {main}
+  thrown in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php on line 43
+[29-Jul-2021 15:59:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php:43
+Stack trace:
+#0 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(770): require_once()
+#1 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(716): load_template('C:\\OpenServer\\d...', true, Array)
+#2 C:\OpenServer\domains\aza-present.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\front-page.php(1): get_header()
+#4 C:\OpenServer\domains\aza-present.local\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\aza-present.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#6 C:\OpenServer\domains\aza-present.local\index.php(17): require('C:\\OpenServer\\d...')
+#7 {main}
+  thrown in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php on line 43
+[29-Jul-2021 16:00:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php:43
+Stack trace:
+#0 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(770): require_once()
+#1 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(716): load_template('C:\\OpenServer\\d...', true, Array)
+#2 C:\OpenServer\domains\aza-present.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\front-page.php(1): get_header()
+#4 C:\OpenServer\domains\aza-present.local\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\aza-present.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#6 C:\OpenServer\domains\aza-present.local\index.php(17): require('C:\\OpenServer\\d...')
+#7 {main}
+  thrown in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php on line 43
+[29-Jul-2021 16:00:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php:43
+Stack trace:
+#0 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(770): require_once()
+#1 C:\OpenServer\domains\aza-present.local\wp-includes\template.php(716): load_template('C:\\OpenServer\\d...', true, Array)
+#2 C:\OpenServer\domains\aza-present.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\front-page.php(1): get_header()
+#4 C:\OpenServer\domains\aza-present.local\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\aza-present.local\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#6 C:\OpenServer\domains\aza-present.local\index.php(17): require('C:\\OpenServer\\d...')
+#7 {main}
+  thrown in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php on line 43
