@@ -169,9 +169,9 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: $white;
     z-index: -999;
-
+    transition: $fast;
+    
     @include breakpoint(lg) {
       padding: 0;
       width: 85%;
@@ -181,11 +181,12 @@
       z-index: 1;
     }
   }
-
+  
   &__content_active {
     opacity: 1;
     visibility: visible;
     transition: $fast;
+    background-color: $white;
     z-index: 10;
   }
 

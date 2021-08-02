@@ -1,4 +1,41 @@
-<?php wp_footer(); ?>
+<div id="modal-offer" class="modal modal-offer is-visible">
+  <div class="modal__overlay" modal-close>
+    <div class="modal__content" role="dialog">
+      <div class="modal__head">
+        <p class="modal__title">Отправьте Ваш номер телефона</p>
+        <div class="modal__close" modal-close></div>
+      </div>
+      <div class="modal__body modal-offer__content">
+        <p class="modal-offer__info">С Вами свяжется менеджер, уточнит предпочтения и придумает варианты композиции специально для Вас и рассчитает стоимость</p>
+        <form action="">
+          <input type="radio" id="contactChoice1" name="contact" value="tel">
+          <label for="contactChoice1">Телефон</label>
+          <br>
+          <input type="radio" id="contactChoice2" name="contact" value="viber">
+          <label for="contactChoice2">Viber</label>
+          <br>
+          <input type="radio" id="contactChoice3" name="contact" value="whatsapp">
+          <label for="contactChoice3">Whatsapp</label>
+          <br>
+          <input type="radio" id="contactChoice4" name="contact" value="telegramm">
+          <label for="contactChoice4">Telegram</label>
+          <br>
+          <br>
+          <input type="tel" id="tel" class="form__input" placeholder="+3752912345678">
+          <br>
+          <br>
+          <input type="submit" value="Отправить" class="btn-prime">
+          <br>
+          <br>
+          <div>
+            <input type="checkbox" id="confid" name="scales">
+            <label for="confid">Я даю согласие на обработку персональных данных в соответсвии с политикой конфиденциальности</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
   <div class="footer__inner">
@@ -90,7 +127,7 @@
             </div>
             <div class="footer__cat">
               <div class="footer__cta-wrap">
-                <button class="footer__cta btn-prime">Подобрать букет</button>
+                <button class="footer__cta btn-prime" data-modal-open="modal-offer">Подобрать букет</button>
               </div>
             </div>
           </div>
@@ -110,6 +147,8 @@
     </div>
   </div>
 </footer>
+
+<?php wp_footer(); ?>
 
 </body>
 
