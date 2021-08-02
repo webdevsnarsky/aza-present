@@ -23,7 +23,7 @@
             <div class="header__menu-wrap header__menu-wrap_mobile-hidden">
               <?php
               wp_nav_menu([
-                'theme_location'  => '',
+                'theme_location'  => 'primary',
                 'menu'            => '',
                 'container'       => 'nav',
                 'container_class' => 'header__pages-nav',
