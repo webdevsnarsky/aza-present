@@ -60,7 +60,7 @@
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-inner">
-            <div class="header__content-overlay">
+            <!-- <div class="header__content-overlay"> -->
               <div class="header__bottom-box">
                 <div class="header__burger-wrap">
                   <div class="burger">
@@ -145,7 +145,7 @@
                 <a href="/login" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/avatar-icon.svg" alt="user area"></a>
                 <a href="/cart" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/cart-icon.svg" alt="user cart"></a>
               </div>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>

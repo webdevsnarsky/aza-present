@@ -1,4 +1,4 @@
-<div id="modal-offer" class="modal modal-offer is-visible">
+<div id="modal-offer" class="modal modal-offer">
   <div class="modal__overlay" modal-close>
     <div class="modal__content" role="dialog">
       <div class="modal__head">
