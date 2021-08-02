@@ -1,0 +1,235 @@
+.footer {
+  &__top {
+    background-color: $grey;
+    @include breakpoint(lg) {
+      padding: 55px 0 55px;
+      position: relative;
+    }
+
+    &-inner {
+      padding: 12px 0 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint(lg) {
+        // padding: 25px 0 45px;
+        position: relative;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    &-wrap {
+      @include breakpoint(lg) {
+        @include o-center;
+      }
+    }
+  }
+
+  &__phone {
+    padding-right: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: $prime;
+    
+    @include breakpoint(lg) {
+      position: relative;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%);
+      left: 100%;
+      height: 1px;
+      background-color: #c0c0c0;
+      width: 100%;
+      
+      @include breakpoint(lg) {
+        width: 220px;
+      }
+      @include breakpoint(xl) {
+        width: 310px;
+      }
+    }
+  }
+
+  &__mail {
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 15px;
+
+    @include breakpoint(lg) {
+      position: relative;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%);
+      right: 100%;
+      height: 1px;
+      background-color: #c0c0c0;
+      width: 100%;
+      
+      @include breakpoint(lg) {
+        width: 220px;
+      }
+      @include breakpoint(xl) {
+        width: 310px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 84px;
+
+    @include breakpoint(lg) {
+      width: 100px;
+    }
+  }
+
+  &__main {
+    background-color: $grey;
+  }
+
+  &__categories {
+    padding: 8px 0 20px;
+
+    @include breakpoint(lg) {
+      padding-top: 21px;
+    }
+  }
+
+  &__cat {
+    @include col();
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include size(1/2);
+
+      @include breakpoint(lg) {
+        @include size(1/4);
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      @include size(1);
+
+      @include breakpoint(lg) {
+        @include size(1/4);
+      }
+    }
+
+    &-title {
+      display: none;
+
+      @include breakpoint(lg) {
+        display: block;
+        margin-top: 0;
+      }
+    }
+
+    &-menu {
+      padding: 0;
+      li {
+        a {
+          display: block;
+          padding: 8px 0;
+          font-weight: 700;
+          font-size: 15px;
+          color: $dark-l;
+        }
+      }
+    }
+  }
+
+  &__pages {
+    &-menu {
+      padding: 0;
+      li {
+        a {
+          display: block;
+          padding: 8px 0;
+          font-weight: 700;
+          font-size: 15px;
+          color: $grey-dark;
+
+          @include breakpoint(lg) {
+            color: $dark-l;
+          }
+        }
+      }
+    }
+  }
+
+  &__cta {
+    &-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__socials {
+    &-wrap {
+      display: flex;
+    }
+  }
+
+  &__adress {
+    font-weight: 700;
+    font-size: 15px;
+    color: $dark-l;
+  }
+
+  &__bottom {
+    padding-bottom: 5px;
+    &-inner {
+      @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__confidental {
+    text-align: center;
+
+    &-link {
+      font-weight: 700;
+      font-size: 14px;
+      color: $prime;
+
+      @include breakpoint(lg) {
+        color: $dark-l;
+        font-weight: 400;
+      }
+
+      &:hover {
+        color: $prime-active;
+      }
+    }
+  }
+
+  &__copyrights {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

@@ -82,7 +82,7 @@
               </div>
               <div class="header__menus">
                 <div class="header__menus-item header__cat-wrap header__cat-wrap_desct-hidden">
-                  <nav class="header__cat-nav">
+                  <!-- <nav class="header__cat-nav">
                     <ul class="header__cat-menu">
                       <li class="menu-item"><a href="">Клубничные</a></li>
                       <li class="menu-item"><a href="">Съедобные</a></li>
@@ -94,10 +94,10 @@
                       <li class="menu-item"><a href="">Наборы ягод</a></li>
                       <li class="menu-item"><a href="">Подарки</a></li>
                     </ul>
-                  </nav>
-                  <!-- <?php
+                  </nav> -->
+                  <?php
                         wp_nav_menu([
-                          'theme_location'  => '',
+                          'theme_location'  => 'product_cats',
                           'menu'            => '',
                           'container'       => 'nav',
                           'container_class' => 'header__cat-nav',
@@ -114,12 +114,12 @@
                           'depth'           => 0,
                           'walker'          => '',
                         ]);
-                        ?> -->
+                        ?>
                 </div>
                 <div class="header__menus-item header__menu-wrap header__menu-wrap_desct-hidden">
                   <?php
                   wp_nav_menu([
-                    'theme_location'  => '',
+                    'theme_location'  => 'primary',
                     'menu'            => '',
                     'container'       => 'nav',
                     'container_class' => 'header__pages-nav',
