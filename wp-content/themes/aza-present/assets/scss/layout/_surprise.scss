@@ -1,0 +1,92 @@
+.surprise {
+  @include breakpoint(lg) {
+    background: url(../img/surprise/gift.png) no-repeat 132% 100%;
+
+  }
+  @include breakpoint(xl) {
+    background: url(../img/surprise/gift.png) no-repeat 123% 100%;
+
+  }
+  @include breakpoint(xxl) {
+    background: url(../img/surprise/gift.png) no-repeat 109% 100%;
+
+  }
+
+  &__inner {
+    padding: 18px 0 34px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 275px;
+
+    @include breakpoint(lg) {
+      max-width: 330px;
+    }
+  }
+
+  &__accordeon {
+    @include breakpoint(lg) {
+      padding: 30px 60px 0;
+      // background: url(../img/surprise/gift.png) no-repeat right;
+
+    }
+  }
+
+  &-accordion__el {
+    &.active .surprise__content:after {
+      width: 10px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-bottom: 35px;
+    height: 390px;
+
+    @include breakpoint(lg) {
+      height: 311px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 9px;
+      background-color: $prime;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(245, 95, 75, 0) 0%, $white 100%);
+    }
+
+    p:nth-child(1) {
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    border: none;
+    color: $prime;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+

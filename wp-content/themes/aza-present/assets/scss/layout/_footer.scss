@@ -70,10 +70,10 @@
   &__mail {
     font-weight: 600;
     font-size: 18px;
-    padding-left: 15px;
-
+    
     @include breakpoint(lg) {
       position: relative;
+      padding-left: 15px;
     }
 
     &::before {
