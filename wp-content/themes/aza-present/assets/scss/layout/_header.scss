@@ -98,6 +98,8 @@
     position: relative;
 
     &-inner {
+      padding-bottom: 10px;
+      
       @include breakpoint(lg) {
         padding: 12px 0; 
         display: flex;

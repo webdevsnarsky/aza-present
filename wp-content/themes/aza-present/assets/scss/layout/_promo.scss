@@ -1,0 +1,137 @@
+.promo {
+  &__container {
+    padding: 0;
+    @include breakpoint(md) {
+      padding: 0 30px;
+    }
+  }
+  &__inner {
+    @include breakpoint(lg) {
+      display: flex;
+    }
+  }
+
+  &__slider {
+    
+    &-item {
+      height: 220px;
+      padding-top: 35px;
+      padding-left: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include breakpoint(lg) {
+        padding-top: 70px;
+        padding-left: 45px;
+        height: 380px;
+      }
+      @include breakpoint(xl) {
+        padding-top: 85px;
+        padding-left: 63px;
+        height: 380px;
+      }
+    }
+    
+    &-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: $white;
+      line-height: 41px;
+    }
+    
+    &-descr {
+      margin-top: 0;
+      color: $white;
+      font-size: 18px;
+      @include breakpoint(lg) {
+        margin-bottom: 20px;
+      }
+    }
+    
+    &-btn {
+      display: inline-block;
+      padding: 10px 45px;
+      color: $white;
+      border-radius: 10px;
+      line-height: 14.79px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    @include breakpoint(lg) {
+      flex-direction: column;
+    }
+
+    &-item {
+      width: 50%;
+      padding-top: 12px;
+      padding-left: 14px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoint(lg) {
+        width: 250px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      @include breakpoint(xl) {
+        width: 350px;
+      }
+    }
+
+    &-title {
+      margin: 0 0 10px;
+      color: $white;
+      @include breakpoint(lg) {
+        margin-bottom: 0;
+        width: 350px;
+      }
+    }
+
+    &-descr {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0;
+      color: $white;
+      @include breakpoint(lg) {
+        font-size: 16px;
+      }
+    }
+
+    &-link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 600;
+      color: $white;
+      @include breakpoint(lg) {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: url(../img/svg-icons/link-mob.svg);
+        border-radius: 50%;
+        border: 1px solid $white;
+        width: 16.5px;
+        height: 16.5px;
+        margin-right: 4.5px;
+        @include breakpoint(lg) {
+          margin-right: 8px;
+          content: url(../img/svg-icons/link.svg);
+          border: 2px solid $white;
+          width: 31px;
+          height: 31px;
+        }
+      }
+    }
+  }
+}

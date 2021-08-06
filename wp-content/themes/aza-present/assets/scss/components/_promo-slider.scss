@@ -1,0 +1,24 @@
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  width: inherit;
+  top: 0;
+  left: 30px;
+  bottom: auto;
+  
+  @include breakpoint(lg) {
+    margin-top: 15px;
+    left: 45px;
+  }
+  @include breakpoint(xl) {
+    margin-top: 20px;
+    left: 63px;
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 32px;
+  height: 5px;
+  border-radius: 5px;
+  background: $white;
+  margin-left: 0;
+  margin-right: 9px;
+}
