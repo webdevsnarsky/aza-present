@@ -309,3 +309,69 @@ Stack trace:
 #5 C:\OpenServer\domains\aza-present.local\wp-includes\class-wp-hook.php(303): do_blocks('<!-- wp:acf/pro...')
 #6 C:\OpenServer\domains\aza-present.local\wp-includes\plugin.php(189): WP_Hook->apply_filters('<!-- wp:acf/pro...', Array)
 #7 C:\OpenServer\domains\aza-present.loca in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\promo.php on line 29
+[08-Aug-2021 14:10:49 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:10:49 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:11:18 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:11:18 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: size in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: attr in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: size in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:12:51 UTC] PHP Notice:  Undefined variable: attr in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:13:57 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 14:13:57 UTC] PHP Notice:  Undefined variable: id in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 13
+[08-Aug-2021 17:35:17 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 3
+[08-Aug-2021 17:35:17 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 3
+[08-Aug-2021 17:36:46 UTC] PHP Notice:  Undefined variable: var in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 3
+[08-Aug-2021 17:36:46 UTC] PHP Notice:  Undefined variable: var in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 3
+[08-Aug-2021 17:38:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 17:38:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 17:38:10 UTC] PHP Notice:  Undefined variable: smth in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 5
+[08-Aug-2021 17:38:10 UTC] PHP Notice:  Undefined variable: smth in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 5
+[08-Aug-2021 17:38:10 UTC] PHP Notice:  Undefined variable: array in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 6
+[08-Aug-2021 17:38:10 UTC] PHP Notice:  Undefined variable: array in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 6
+[08-Aug-2021 17:38:57 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:38:57 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:39:52 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:39:52 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:40:09 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:40:09 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:40:15 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:40:15 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:42:01 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:42:05 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:42:05 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:46:14 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:46:14 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:46:17 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 17:46:17 UTC] PHP Notice:  Undefined variable: post in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 4
+[08-Aug-2021 18:04:44 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 18:04:44 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 18:05:03 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 18:05:03 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 18:14:59 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:14:59 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:15:08 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:15:08 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:15:36 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:15:36 UTC] PHP Notice:  Undefined variable: category in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 15
+[08-Aug-2021 18:50:30 UTC] PHP Notice:  Undefined variable: args in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 18:50:31 UTC] PHP Notice:  Undefined variable: args in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 8
+[08-Aug-2021 20:24:33 UTC] PHP Notice:  Undefined variable: postslist in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 37
+[08-Aug-2021 20:24:33 UTC] PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 37
+[08-Aug-2021 20:24:34 UTC] PHP Notice:  Undefined variable: postslist in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 37
+[08-Aug-2021 20:24:34 UTC] PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 37
+[08-Aug-2021 20:24:47 UTC] PHP Notice:  Undefined variable: postslist in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 36
+[08-Aug-2021 20:24:47 UTC] PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 36
+[08-Aug-2021 20:24:47 UTC] PHP Notice:  Undefined variable: postslist in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 36
+[08-Aug-2021 20:24:47 UTC] PHP Notice:  Trying to get property of non-object in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 36
+[08-Aug-2021 21:31:54 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 44
+[08-Aug-2021 21:31:55 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 44
+[08-Aug-2021 21:42:25 UTC] PHP Parse error:  syntax error, unexpected 'wp_reset_postdata' (T_STRING) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 64
+[08-Aug-2021 21:42:25 UTC] PHP Parse error:  syntax error, unexpected 'wp_reset_postdata' (T_STRING) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 64
+[08-Aug-2021 21:43:28 UTC] PHP Parse error:  syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 62
+[08-Aug-2021 21:43:29 UTC] PHP Parse error:  syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 62
+[09-Aug-2021 18:26:57 UTC] PHP Fatal error:  Out of memory (allocated 2097152) (tried to allocate 32768 bytes) in C:\OpenServer\domains\aza-present.local\wp-content\plugins\woocommerce\includes\rest-api\Controllers\Version2\class-wc-rest-system-status-tools-v2-controller.php on line 546
+[09-Aug-2021 18:41:57 UTC] PHP Warning:  exif_read_data(canoe-kayak-1405961_640.jpg): Illegal IFD size: x0003 + 2 + x4D00*12 = x39C03 &gt; x00F4 in C:\OpenServer\domains\aza-present.local\wp-admin\includes\image.php on line 805
+[09-Aug-2021 18:41:57 UTC] PHP Warning:  exif_read_data(canoe-kayak-1405961_640.jpg): Illegal IFD size: x0003 + 2 + x4D00*12 = x39C03 &gt; x00F4 in C:\OpenServer\domains\aza-present.local\wp-admin\includes\image.php on line 805

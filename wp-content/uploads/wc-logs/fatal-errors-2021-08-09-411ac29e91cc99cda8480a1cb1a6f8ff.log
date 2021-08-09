@@ -1,0 +1,2 @@
+2021-08-09T18:26:57+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 32768 bytes) in C:\OpenServer\domains\aza-present.local\wp-content\plugins\woocommerce\includes\rest-api\Controllers\Version2\class-wc-rest-system-status-tools-v2-controller.php on line 546
+

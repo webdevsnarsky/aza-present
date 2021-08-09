@@ -27,6 +27,9 @@ add_theme_support('custom-logo');
 // 	acf_add_options_page();
 // }
 
+// add images for posts 
+add_theme_support( 'post-thumbnails' );
+
 // add widgets
 
 function wpb_widgets_init()

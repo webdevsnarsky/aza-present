@@ -26,5 +26,15 @@ function my_acf_init_block_types() {
             'icon'              => 'admin-comments',
             'keywords'          => array( 'surprise', 'о сюрпризах' ),
         ));
+        //register posts block.
+        acf_register_block_type(array(
+            'name'              => 'posts',
+            'title'             => __('posts/записи'),
+            'description'       => __('posts'),
+            'render_template'   => 'template-parts/blocks/posts.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'posts', 'о постах' ),
+        ));
     }
 }

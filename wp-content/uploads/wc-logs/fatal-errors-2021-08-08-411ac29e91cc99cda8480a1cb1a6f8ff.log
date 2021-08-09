@@ -1,0 +1,12 @@
+2021-08-08T21:31:54+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 44
+
+2021-08-08T21:31:55+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 44
+
+2021-08-08T21:42:25+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 64
+
+2021-08-08T21:42:25+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING) in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 64
+
+2021-08-08T21:43:28+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 62
+
+2021-08-08T21:43:29+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ',' or ';' in C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\template-parts\blocks\posts.php on line 62
+
