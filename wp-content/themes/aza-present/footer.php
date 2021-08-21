@@ -113,15 +113,7 @@
             <div class="footer__cat">
               <h3 class="footer__cat-title">Контакты</h3>
               <div class="footer__socials-wrap">
-                <ul class="footer__socials socials">
-                  <?php if (have_rows('socials', 'options')) : ?>
-                    <?php while (have_rows('socials', 'options')) : the_row(); ?>
-                      <li class="socials__item">
-                        <a href="<?php the_sub_field('social_link', 'option'); ?>" class="socials__link" style="background-image: url('<?php the_sub_field('social_icon', 'option'); ?>')"></a>
-                      </li>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
-                </ul>
+                <?php get_template_part('template-parts/socials'); ?>
               </div>
               <p class="footer__adress">г. Саранск, ул. Степана Разина 19</p>
             </div>

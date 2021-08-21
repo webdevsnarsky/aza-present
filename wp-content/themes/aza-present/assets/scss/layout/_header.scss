@@ -99,9 +99,9 @@
 
     &-inner {
       padding-bottom: 10px;
-      
+
       @include breakpoint(lg) {
-        padding: 12px 0; 
+        padding: 12px 0;
         display: flex;
         justify-content: space-between;
       }
@@ -132,7 +132,7 @@
 
     @include breakpoint(lg) {
       .header__cta-wrap_desct-hidden,
-      .header__login-wrap_desct-hidden, 
+      .header__login-wrap_desct-hidden,
       .header__menu-wrap_desct-hidden,
       .header__socials-wrap_desct-hidden {
         display: none;
@@ -171,9 +171,9 @@
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: -999;
+    z-index: -10;
     transition: $fast;
-    
+
     @include breakpoint(lg) {
       padding: 0;
       width: 85%;
@@ -183,7 +183,7 @@
       z-index: 1;
     }
   }
-  
+
   &__content_active {
     opacity: 1;
     visibility: visible;
@@ -227,6 +227,24 @@
         }
       }
     }
+
+    &-wrap {
+      &::-webkit-scrollbar {
+        height: 8px;
+        background-color: lightgray;
+        border-radius: 9em;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: $prime;
+        border-radius: 9em;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+        background-color: $prime-active;
+    }
+    }
   }
 
   &__pages {
@@ -249,11 +267,6 @@
   &__socials-wrap {
     display: flex;
     justify-content: center;
-  }
-
-  &__socials {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   &__customer {

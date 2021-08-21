@@ -9,10 +9,38 @@
     @include breakpoint(lg) {
       display: flex;
     }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      width: inherit;
+      top: 0;
+      left: 30px;
+      bottom: auto;
+
+      @include breakpoint(lg) {
+        margin-top: 15px;
+        left: 45px;
+      }
+      @include breakpoint(xl) {
+        margin-top: 20px;
+        left: 63px;
+      }
+    }
+
+    .swiper-container-horizontal
+      > .swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      width: 32px;
+      height: 5px;
+      border-radius: 5px;
+      background: $white;
+      margin-left: 0;
+      margin-right: 9px;
+    }
   }
 
   &__slider {
-    
     &-item {
       height: 220px;
       padding-top: 35px;
@@ -31,14 +59,14 @@
         height: 380px;
       }
     }
-    
+
     &-title {
       margin-top: 0;
       margin-bottom: 10px;
       color: $white;
       line-height: 41px;
     }
-    
+
     &-descr {
       margin-top: 0;
       color: $white;
@@ -47,7 +75,7 @@
         margin-bottom: 20px;
       }
     }
-    
+
     &-btn {
       display: inline-block;
       padding: 10px 45px;
@@ -73,7 +101,7 @@
       background-size: cover;
 
       @include breakpoint(lg) {
-        width: 250px;
+        width: 100%;
         height: 50%;
         display: flex;
         flex-direction: column;

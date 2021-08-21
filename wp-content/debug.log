@@ -375,3 +375,4 @@ Stack trace:
 [09-Aug-2021 18:26:57 UTC] PHP Fatal error:  Out of memory (allocated 2097152) (tried to allocate 32768 bytes) in C:\OpenServer\domains\aza-present.local\wp-content\plugins\woocommerce\includes\rest-api\Controllers\Version2\class-wc-rest-system-status-tools-v2-controller.php on line 546
 [09-Aug-2021 18:41:57 UTC] PHP Warning:  exif_read_data(canoe-kayak-1405961_640.jpg): Illegal IFD size: x0003 + 2 + x4D00*12 = x39C03 &gt; x00F4 in C:\OpenServer\domains\aza-present.local\wp-admin\includes\image.php on line 805
 [09-Aug-2021 18:41:57 UTC] PHP Warning:  exif_read_data(canoe-kayak-1405961_640.jpg): Illegal IFD size: x0003 + 2 + x4D00*12 = x39C03 &gt; x00F4 in C:\OpenServer\domains\aza-present.local\wp-admin\includes\image.php on line 805
+[15-Aug-2021 10:04:15 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\OpenServer\domains\aza-present.local\wp-includes\Requests\Transport\cURL.php on line 484
