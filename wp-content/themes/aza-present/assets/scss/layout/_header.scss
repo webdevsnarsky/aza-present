@@ -223,6 +223,12 @@
             font-weight: 700;
             font-size: 15px;
             color: $black;
+            &:hover {
+              color: $prime;
+            }
+            &:active {
+              color: $prime-active;
+            }
           }
         }
       }
@@ -258,6 +264,12 @@
             font-weight: 400;
             font-size: 14px;
             color: $black;
+            &:hover {
+              color: $prime;
+            }
+            &:active {
+              color: $prime-active;
+            }
           }
         }
       }
