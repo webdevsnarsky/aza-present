@@ -26,6 +26,18 @@ function my_acf_init_block_types() {
             'icon'              => 'admin-comments',
             'keywords'          => array( 'surprise', 'о сюрпризах' ),
         ));
+
+        //register about contacts block.
+        acf_register_block_type(array(
+            'name'              => 'contacts',
+            'title'             => __('contacts/ секция контакты'),
+            'description'       => __('contacts'),
+            'render_template'   => 'template-parts/blocks/contacts.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'contacts', 'контакты' ),
+        ));
+
         //register posts block.
         acf_register_block_type(array(
             'name'              => 'posts',
