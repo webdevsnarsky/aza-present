@@ -38,6 +38,17 @@ function my_acf_init_block_types() {
             'keywords'          => array( 'contacts', 'контакты' ),
         ));
 
+        //register about delivery block.
+        acf_register_block_type(array(
+            'name'              => 'delivery',
+            'title'             => __('delivery/ секция доставка'),
+            'description'       => __('delivery'),
+            'render_template'   => 'template-parts/blocks/delivery.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'delivery', 'доставка' ),
+        ));
+
         //register posts block.
         acf_register_block_type(array(
             'name'              => 'posts',

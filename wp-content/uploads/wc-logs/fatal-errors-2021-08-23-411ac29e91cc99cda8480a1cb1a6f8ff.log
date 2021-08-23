@@ -1,0 +1,8 @@
+2021-08-23T20:22:46+00:00 CRITICAL syntax error, unexpected 'template_uri' (T_STRING), expecting ';' or ',' в C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php на строке 141
+
+2021-08-23T20:22:53+00:00 CRITICAL syntax error, unexpected 'template_uri' (T_STRING), expecting ';' or ',' в C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php на строке 141
+
+2021-08-23T21:16:50+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php на строке 81
+
+2021-08-23T21:26:11+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' в C:\OpenServer\domains\aza-present.local\wp-content\themes\aza-present\header.php на строке 83
+

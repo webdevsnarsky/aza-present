@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="<?php echo bloginfo('template_url'); ?>/assets/img/favicons/favicon.ico" type="image/x-icon">
-  <title><?php bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
+  <title><?php bloginfo('name');
+          echo " | ";
+          bloginfo('description'); ?></title>
   <?php wp_head(); ?>
 
 </head>
@@ -74,7 +76,14 @@
               </div>
               <a href="/cart" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/buy-mobile-icon.svg" alt="user cart"></a>
             </div>
-            <div class="header__content">
+            <div class="header__content" style="<?php
+              if (!is_page('dostavka') && !is_page('kontakty')) {
+                echo 'width:85%;';
+              } else {
+                echo 'width:100%;';
+              }
+            ?>
+            ">
               <div class="header__cta-wrap header__cta-wrap_desct-hidden">
                 <button class="header__cta btn-prime" data-modal-open="modal-offer">Подобрать букет</button>
               </div>
@@ -131,10 +140,17 @@
                 <?php get_template_part('template-parts/socials'); ?>
               </div>
             </div>
-            <div class="header__customer-area header__customer-area_mobile-hidden">
-              <a href="/login" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/avatar-icon.svg" alt="user area"></a>
-              <a href="/cart" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/cart-icon.svg" alt="user cart"></a>
-            </div>
+
+            <?php
+            if (!is_page('dostavka') && !is_page('kontakty')) {
+              echo 
+              '<div class="header__customer-area header__customer-area_mobile-hidden">' .
+              '<a href="/login" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/avatar-icon.svg" alt="user area"></a>' .
+              '<a href="/cart" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/cart-icon.svg" alt="user cart"></a>' .
+              '</div>';
+            }
+            ?>
+
           </div>
         </div>
       </div>
