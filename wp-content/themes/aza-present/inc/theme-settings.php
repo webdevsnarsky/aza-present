@@ -9,33 +9,13 @@ function theme_name_scripts()
 	enqueue_versioned_script('script-name', '/assets/js/app.min.js', array(), '1.0.0', true);
 }
 
-
 // подключаем принудительное обновление сайта
 
-/**
- * Enqueues script with WordPress and adds version number that is a timestamp of the file modified date.
- * 
- * @param string      $handle    Name of the script. Should be unique.
- * @param string|bool $src       Path to the script from the theme directory of WordPress. Example: '/js/myscript.js'.
- * @param array       $deps      Optional. An array of registered script handles this script depends on. Default empty array.
- * @param bool        $in_footer Optional. Whether to enqueue the script before </body> instead of in the <head>.
- *                               Default 'false'.
- */
 function enqueue_versioned_script($handle, $src = false, $deps = array(), $in_footer = false)
 {
 	wp_enqueue_script($handle, get_stylesheet_directory_uri() . $src, $deps, filemtime(get_stylesheet_directory() . $src), $in_footer);
 }
 
-/**
- * Enqueues stylesheet with WordPress and adds version number that is a timestamp of the file modified date.
- *
- * @param string      $handle Name of the stylesheet. Should be unique.
- * @param string|bool $src    Path to the stylesheet from the theme directory of WordPress. Example: '/css/mystyle.css'.
- * @param array       $deps   Optional. An array of registered stylesheet handles this stylesheet depends on. Default empty array.
- * @param string      $media  Optional. The media for which this stylesheet has been defined.
- *                            Default 'all'. Accepts media types like 'all', 'print' and 'screen', or media queries like
- *                            '(orientation: portrait)' and '(max-width: 640px)'.
- */
 function enqueue_versioned_style($handle, $src = false, $deps = array(), $media = 'all')
 {
 	wp_enqueue_style($handle, get_stylesheet_directory_uri() . $src, $deps = array(), filemtime(get_stylesheet_directory() . $src), $media);
@@ -52,13 +32,6 @@ function theme_register_nav()
 
 // add custom logo
 add_theme_support('custom-logo');
-
-// add options
-
-// if (function_exists('acf_add_options_page')) {
-
-// 	acf_add_options_page();
-// }
 
 // add images for posts 
 add_theme_support( 'post-thumbnails' );
@@ -101,3 +74,11 @@ if (function_exists('acf_add_options_page')) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 }
+
+// add cutomize woocommerce theme 
+
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
