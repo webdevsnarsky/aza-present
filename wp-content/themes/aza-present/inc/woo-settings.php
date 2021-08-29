@@ -32,3 +32,9 @@ add_filter('request', function ($vars) {
   }
   return $vars;
 });
+
+
+// add slider and lightbox for product cart
+
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );

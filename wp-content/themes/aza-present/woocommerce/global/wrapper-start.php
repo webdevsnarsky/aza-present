@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
       }
       ?>
-      <h1 class="ip-content__title"><?php the_title() ?></h1>
+      <h1 class="ip-content__title"><?php is_product() ? the_title() : woocommerce_page_title()?></h1>
     </div>
 
 
