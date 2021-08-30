@@ -1,0 +1,15 @@
+.woocommerce form.cart button.add_to_cart_button,
+.woocommerce form.cart button.single_add_to_cart_button {
+  margin-top: 15px;
+  color: #fff !important;
+  border-color: #ccc !important;
+  background-color: $prime !important;
+  border-radius: 12px;
+}
+
+.woocommerce form.cart button.add_to_cart_button:hover,
+.woocommerce form.cart button.single_add_to_cart_button:hover {
+  color: #fff !important;
+  border-color: #ccc !important;
+  background-color: $prime-active !important;
+}

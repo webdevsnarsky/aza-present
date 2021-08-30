@@ -176,11 +176,18 @@
 
     @include breakpoint(lg) {
       padding: 0;
-      // width: 85%;
       position: static;
       opacity: 1;
       visibility: visible;
       z-index: 1;
+    }
+
+    &_media {
+      width: 100%;
+
+      @include breakpoint(lg) {
+        width: 85%;
+      }
     }
   }
 

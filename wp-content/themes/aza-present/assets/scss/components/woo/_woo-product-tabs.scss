@@ -1,0 +1,18 @@
+.woocommerce-tabs {
+  > .tabs {
+    display: none;
+  }
+
+  .woocommerce-Tabs-panel {
+    table {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint(lg) {
+          display: inherit;
+        }
+      }
+    }
+  }
+}

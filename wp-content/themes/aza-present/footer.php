@@ -115,7 +115,7 @@
               <div class="footer__socials-wrap">
                 <?php get_template_part('template-parts/socials'); ?>
               </div>
-              <p class="footer__adress">г. Саранск, ул. Степана Разина 19</p>
+              <p class="footer__adress">г. Минск, ул. Степана Разина 19</p>
             </div>
             <div class="footer__cat">
               <div class="footer__cta-wrap">

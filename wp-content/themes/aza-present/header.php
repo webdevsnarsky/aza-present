@@ -51,7 +51,7 @@
               </a>
             </div>
             <div class="header__contacts">
-              <span class="header__adress">Саранск</span>
+              <span class="header__adress">Минск</span>
               <a href="tel:<?php echo str_replace('-', '', strval(get_field('phone', 'option')))  ?>" class="header__phone"><?php the_field('phone', 'option') ?></a>
             </div>
             <div class="header__cta-wrap header__cta-wrap_mobile-hidden">
@@ -76,14 +76,13 @@
               </div>
               <a href="/cart" class="header__customer-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg-icons/buy-mobile-icon.svg" alt="user cart"></a>
             </div>
-            <div class="header__content" style="<?php
-              if (!is_page('dostavka') && !is_page('kontakty')) {
-                echo 'width:85%;';
-              } else {
-                echo 'width:100%;';
-              }
-            ?>
-            ">
+            <div class="header__content <?php
+                                        if (!is_page('dostavka') && !is_page('kontakty')) {
+                                          echo 'header__content_media';
+                                        } else {
+                                          echo '';
+                                        }
+                                        ?>">
               <div class="header__cta-wrap header__cta-wrap_desct-hidden">
                 <button class="header__cta btn-prime" data-modal-open="modal-offer">Подобрать букет</button>
               </div>
@@ -143,11 +142,11 @@
 
             <?php
             if (!is_page('dostavka') && !is_page('kontakty')) {
-              echo 
+              echo
               '<div class="header__customer-area header__customer-area_mobile-hidden">' .
-              '<a href="/login" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/avatar-icon.svg" alt="user area"></a>' .
-              '<a href="/cart" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/cart-icon.svg" alt="user cart"></a>' .
-              '</div>';
+                '<a href="/login" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/avatar-icon.svg" alt="user area"></a>' .
+                '<a href="/cart" class="header__customer-link"><img src="' . get_template_directory_uri() . '/assets/img/svg-icons/cart-icon.svg" alt="user cart"></a>' .
+                '</div>';
             }
             ?>
 
