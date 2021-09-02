@@ -1,7 +1,4 @@
 <?php
-// правильный способ подключить стили и скрипты
-add_action('wp_enqueue_scripts', 'theme_name_scripts');
-
 // add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
 function theme_name_scripts()
 {
@@ -20,6 +17,9 @@ function enqueue_versioned_style($handle, $src = false, $deps = array(), $media 
 {
 	wp_enqueue_style($handle, get_stylesheet_directory_uri() . $src, $deps = array(), filemtime(get_stylesheet_directory() . $src), $media);
 }
+
+// правильный способ подключить стили и скрипты
+add_action('wp_enqueue_scripts', 'theme_name_scripts');
 
 
 // add menu
