@@ -70,10 +70,12 @@ function replace_variation_single_price()
 
 // add surprise section to product page 
 
-add_action('woocommerce_after_single_product', 'add_surprise_section', 25);
+add_action('woocommerce_after_main_content', 'add_surprise_section', 15);
 
 function add_surprise_section() {
   // $surprise = get_template_part('template-parts/surprise');
 
-  echo "<div class='surprise_media'>" . get_template_part('template-parts/surprise') . "</div>";
+  echo "<div class='surprise_media'>";
+    get_template_part('template-parts/surprise');
+  echo "</div>";
 }
