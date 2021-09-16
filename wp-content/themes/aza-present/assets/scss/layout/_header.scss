@@ -210,11 +210,11 @@
 
     &-item {
       width: 50%;
-      @include breakpoint(lg) {
-        width: auto;
-        padding: 0;
-        overflow-x: auto;
-      }
+
+      // @include breakpoint(lg) {
+      //   scrollbar-color: orange lightyellow;
+      //   scrollbar-width: thin;
+      // }
     }
   }
 
@@ -242,6 +242,14 @@
     }
 
     &-wrap {
+      @include breakpoint(lg) {
+        width: auto;
+        padding: 0;
+        overflow-x: scroll;
+        scrollbar-color: $prime lightgray;
+        scrollbar-width: thin;
+      }
+
       &::-webkit-scrollbar {
         height: 8px;
         background-color: lightgray;
